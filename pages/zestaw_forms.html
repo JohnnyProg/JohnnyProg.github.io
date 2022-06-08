@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="kawy" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="życzymy najlepszej kawusi" content="kawa" />
+        <meta name="Jan Gryta" content="" />
+        <title>Smacznej kawusi - Projekt</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Smacznej Kawusi</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../pages/kawy.html" id="coffe">Kawy</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../pages/jedzenie.html" id="food">Coś słodkiego</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../pages/zestawy_show.html" id="zestawy">Historia zamówień</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../pages/zestaw_forms.html" id="form_zestaw">Utwórz zestaw</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../pages/gallery.html" id="gallery">Galeria</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="row align-items-center my-5">
+                        <h1>Złóż zamówienie</h1>
+                        <form>
+                            <!-- wybór kawy-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Kawa</span>
+                                <select class="form-control" id="kawa" name="kawa" required>
+                                    <option value="">Wybierz kawę</option>
+                                    <option value="klasyczna">Czarna klasyczna</option>
+                                    <option value="espresso">Espresso</option>
+                                    <option value="cappucion">Cappucion</option>
+                                    <option value="americano">Americano</option>
+                                    <option value="frappo">Frappo</option>
+                                    <option value="macchiato">Macchiato</option>
+                                    <option value="mocha">Mocha</option>
+                                    <option value="romano">Romano</option>
+                                    <option value="wiedeńska">Kawa wiedeńska</option>
+                                </select>
+                                <div class="invalid-feedback">Proszę wybrać herbatę!</div>
+                            </div>
+                            <!-- cukier-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Cukier: </span>
+                                
+
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" name="cukier" type="radio" value="Normalnie"> Normalnie
+                                </div>
+                                
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" name="cukier" type="radio" value="Połowa"> Połowa
+                                </div>
+
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" name="cukier" type="radio" value="Bez"> Bez
+                                </div>
+            
+                            </div>
+                            
+                            <!-- dodatkowe jedzenie-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Coś słodkiego: </span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" name="cukier" type="radio" value="Normalnie">
+                                </div>
+                                <select class="form-control" id="food" name="food" >
+                                    <option>brak</option>
+                                    <option value="Babeczki">Babeczki</option>
+                                    <option value="Croissant">Croissant</option>
+                                    <option value="Ciasteczka">Ciasteczka</option>
+                                    <option value="Pączki">Pączki</option>
+                                    <option value="Dalgona">Dalgona</option>
+                                    <option value="Krem brule">Krem brule</option>
+                                    <option value="Tiramisu">Tiramisu</option>
+                                    <option value="Lody czekoladowe">Lody czekoladowe</option>
+                                </select>
+                                <div class="invalid-feedback">Proszę wybrać herbatę!</div>
+                            </div>
+                            <!--Adres-->
+
+                            <br>
+                            <h5>adres dostawy: </h5>
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Numer telefonu: </span>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="000-000-000"
+                                       required>
+                                <div class="invalid-feedback">Podany mail jest niepoprawny!</div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Ulica: </span>
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Numer domu: </span>
+                                <input type="number"  class="form-control" id="dom" name="dom" required>
+                                <span class="input-group-text">Numer mieszkania: </span>
+                                <input type="number" class="form-control" id="mieszkanie" name="mieszkanie">
+                            </div>
+                            <!--Reszta-->
+                            <div class="input-group">
+                                <span class="input-group-text">Dodatkowe uwagi <br> (opcjonalne, max. 2000 znaków)</span>
+                                <textarea class="form-control" id="uwagi" maxlength="2000" rows="3"></textarea>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary col-6" type="button" id="zamow">Zamów</button>
+                                <button class="btn btn-outline-secondary col-6" type="button" id="reset">Reset</button>
+                              </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
